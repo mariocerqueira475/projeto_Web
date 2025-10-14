@@ -44,20 +44,37 @@
         </nav>
      </div>
      <div class = "content">
-         <div class="container text-center">
-          <div class="row">  
-           <div class="col">
-            <img src="img/local.png" width="500px" height="400px">
-             </div>
-            <div class="col">
-                <h1>Rio Essencial</h1>
-                <br>
-                <p class="lead texto">Voçê sonha em viajar no melhor lugar do mundo?<br>Então venha conhecer o rio essencial</p>
+
+<form class="row g-3">
+                <div class="col-md-12">
+                    <label for="inputName" class="form-label">Informe seu Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>             
                 
-           </div>
-              </div>
-               </div>
+                <div class="col-md-12">
+                    <label for="inputAssunto" class="form-label">Selecione o Assunto</label>
+                    <select id="assunto" class="form-select">
+                        <option selected>Selecione...</option>
+                        <option>Sugestões</option>
+                        <option>Críticas</option>
+                        <option>Elogios</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                    <div class="col-md-12">
+                        <label for="inputRecado" class="form-label">Deixe seu Recado</label>
+                        <textarea class="form-control textarea" id="recado" rows="5" cols="10" placeholder="Deixe seu recado aqui..." maxlength="200"></textarea>
+                    </div> 
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">CONFIRMAR</button>
+                    <button type="reset" class="btn btn-danger">LIMPAR</button>
+                </div>
+            </form>
+
      </div>
+
+
      <div class = "footer">
       <div class="rounded-social-buttons">
 <br>
